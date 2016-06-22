@@ -130,7 +130,7 @@ traits:
         description: |
             Get a list of articles, sorted by date.
         is:
-          - paged: { resource: article }
+          - paged: { resource: Article }
         responses:
             200:
                 description: |
@@ -192,7 +192,7 @@ traits:
     /{id}:
         type:
             item:
-                resource: article
+                resource: Article
         description: |
             Individual article.
         uriParameters:
